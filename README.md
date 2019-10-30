@@ -20,9 +20,17 @@ the origin v-coco api please click [here](https://github.com/s-gupta/v-coco.git)
 cd ROOT_DIR
 python visualization.py
 ```
+![](https://github.com/SherlockHolmes221/Supplement-for-VCOCO-API/raw/master/carry_train.png)
+
 - Calculation about the Table1 in ```Visual Semantic Role Labeling```
+![](https://github.com/SherlockHolmes221/Supplement-for-VCOCO-API/raw/master/table1_part.png)
+```
+cd ROOT_DIR
+python v-coco-table1.py
+```
 - HOIs in the datasets
 ```hois/vcoco-hois.json```
+![](https://github.com/SherlockHolmes221/Supplement-for-VCOCO-API/raw/master/hois_part.png)
 ```
 # generate this file by running:
 python get_hois.py
