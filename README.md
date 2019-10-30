@@ -1,83 +1,103 @@
-# Verbs in COCO (V-COCO) Dataset
+# Supplement for VCOCO-API
+the origin v-coco api please click [here](https://github.com/s-gupta/v-coco.git)
 
-This repository hosts the Verbs in COCO (V-COCO) dataset and associated code to evaluate models for the Visual Semantic Role Labeling (VSRL) task as ddescribed in <a href=http://arxiv.org/abs/1505.04474>this technical report</a>. 
+### What I change 
+- modify code to build for python3
+- add v-coco-table.py 
 
-### Citing
-If you find this dataset or code base useful in your research, please consider citing the following papers:
+  To show how to generate the data in table1 of the paper ```Visual Semantic Role Labeling```
+- add get_hois.py, save_hois.py and io_utils.py
+  
+  To calculate all HOIs like HOI-DET
+- add visualization.py 
+  
+  More concise to visualization without download from Internet
 
-    @article{gupta2015visual,
-      title={Visual Semantic Role Labeling},
-      author={Gupta, Saurabh and Malik, Jitendra},
-      journal={arXiv preprint arXiv:1505.04474},
-      year={2015}
-    }
-    
-    @incollection{lin2014microsoft,
-      title={Microsoft COCO: Common objects in context},
-      author={Lin, Tsung-Yi and Maire, Michael and Belongie, Serge and Hays, James and Perona, Pietro and Ramanan, Deva and Doll{\'a}r, Piotr and Zitnick, C Lawrence},
-      booktitle={Computer Vision--ECCV 2014},
-      pages={740--755},
-      year={2014},
-      publisher={Springer}
-    }
-    
-### Installation
-1. Clone repository (recursively, so as to include COCO API).
-    ```Shell
-    git clone --recursive https://github.com/s-gupta/v-coco.git
-    ```
+## Experiments and Results
+- Visualization
+```
+# You can change the configurations to visual different actions and datasets
+cd ROOT_DIR
+python visualization.py
+```
+- Calculation about the Table1 in ```Visual Semantic Role Labeling```
+- HOIs in the datasets
+```hois/vcoco-hois.json```
+```
+# generate this file by running:
+python get_hois.py
+``` 
 
-2. This dataset builds off <a href=http://mscoco.org/>MS COCO</a>, please download MS-COCO images and annotations. 
+## Preparation
+### build the project 
+```
+# todo
+git clone --recursive https://github.com/s-gupta/v-coco.git
 
-3. Current V-COCO release only uses a subset of MS-COCO images (Image IDs listed in ```data/splits/vcoco_all.ids```). Use the following script to pick out annotations from the COCO annotations to allow faster loading in V-COCO.  
-    ```Shell
-    # Assume you cloned the repository to `VCOCO_DIR'
-    cd $VCOCO_DIR
-    # If you downloaded coco annotations to coco-data/annotations
-    python script_pick_annotations.py coco-data/annotations
-    ```
-    
-4. Build ```coco/PythonAPI/pycocotools/_mask.so```, ```cython_bbox.so```. 
-    ```Shell
-    # Assume you cloned the repository to `VCOCO_DIR'
-    cd $VCOCO_DIR/coco/PythonAPI/ && make
-    cd $VCOCO_DIR && make
-    ```
+# setup the environment
+conda create -n vcocoapi python=3.6.9 
+conda activate vcocoapi
+pip install numpy==1.16.0
+pip install cython 
+(need to supplement here when you acturally build)
 
-### Using the dataset
-1. An IPython notebook, illustrating how to use the annotations in the dataset is available in ```V-COCO.ipynb```
-2. The current release of the dataset includes annotations as indicated in Table 1 in the paper. We are collecting role annotations for the 6 categories (that are missing) and will make them public shortly.
+#cmake
+cd ROOT_DIR/coco/PythonAPI/
+make
+make install
+cd ROOT_DIR
+make 
+```
 
+### Download COCO2014 dataset
+Current V-COCO release uses a subset of MS-COCO images
+If your already have coco2014 dataset, you just need a soft link list this
+```
+cd cd ROOT_DIR/coco
+ln -s your/path/to/coco/images images
+ln -s your/path/to/coco/annotations annotations
+```
+If you don't have coco2014 dataset, please follow to download:
+```
+cd ROOT_DIR/coco
+URL_2014_Train_images=http://images.cocodataset.org/zips/train2014.zip
+URL_2014_Val_images=http://images.cocodataset.org/zips/val2014.zip
+URL_2014_Test_images=http://images.cocodataset.org/zips/test2014.zip
+URL_2014_Trainval_annotation=http://images.cocodataset.org/annotations/annotations_trainval2014.zip
 
-### Evaluation
-We provide evaluation code that computes ```agent AP``` and ```role AP```, as explained in the paper. 
+wget -N $URL_2014_Train_images
+wget -N $URL_2014_Val_images
+wget -N $URL_2014_Test_images
+wget -N $URL_2014_Trainval_annotation
 
-In order to use the evaluation code, store your predictions as a ```pickle file (.pkl)``` in the following format:
-  ```Shell
-  [ {'image_id':        # the coco image id,
-     'person_box':      #[x1, y1, x2, y2] the box prediction for the person,
-     '[action]_agent':  # the score for action corresponding to the person prediction,
-     '[action]_[role]': # [x1, y1, x2, y2, s], the predicted box for role and 
-                        # associated score for the action-role pair.
-     } ]
-  ```
+mkdir images
 
-Assuming your detections are stored in ```det_file=/path/to/detections/detections.pkl```, do
+unzip train2014.zip -d images/
+unzip val2014.zip -d images/
+unzip test2014.zip -d images/
+unzip annotations_trainval2014.zip
 
+rm train2014.zip
+rm val2014.zip
+rm test2014.zip
+rm annotations_trainval2014.zip
+```
 
-  ```Shell
-  from vsrl_eval import VCOCOeval
-  vcocoeval = VCOCOeval(vsrl_annot_file, coco_file, split_file)
-    # e.g. vsrl_annot_file: data/vcoco/vcoco_val.json
-    #      coco_file:       data/instances_vcoco_all_2014.json
-    #      split_file:      data/splits/vcoco_val.ids
-  vcocoeval._do_eval(det_file, ovr_thresh=0.5)
-  ```
+### Get the data used in v-coco
+This file will generate ```instances_vcoco_all_2014.json``` in the ROOT_DIR/data,
+and these include all the images and instance used in v-coco dataset
+```
+cd ROOT_DIR 
+python script_pick_annotations.py coco/annotations
 
-  We introduce two scenarios for ```role AP``` evaluation. 
-    
-  1. [Scenario 1] In this scenario, for the test cases with missing role annotations an agent role prediction is correct if the action is correct & the overlap between the person boxes is >0.5 & the corresponding role is empty e.g. ```[0,0,0,0]``` or ```[NaN,NaN,NaN,NaN]```. This scenario is fit for missing roles due to occlusion.
+# format about instances_vcoco_all_2014.json
+# image_id       - Nx1
+# ann_id         - Nx1
+# label          - Nx1
+# action_name    - string
+# role_name      - ['agent', 'obj', 'instr']
+# role_object_id - N x K matrix, obviously [:,0] is same as ann_id
+```
 
-  2. [Scenario 2] In this scenario, for the test cases with missing role annotations an agent role prediction is correct if the action is correct & the overlap between the person boxes is >0.5 (the corresponding role is ignored). This scenario is fit for the cases with roles outside the COCO categories.
 
 

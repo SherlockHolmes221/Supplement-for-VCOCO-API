@@ -1,0 +1,2333 @@
+[
+    {
+        "action": "carry",
+        "id": 1,
+        "object": "backpack",
+        "rare": false,
+        "test_num": 80,
+        "train_num": 28,
+        "val_num": 31
+    },
+    {
+        "action": "carry",
+        "id": 2,
+        "object": "banana",
+        "rare": true,
+        "test_num": 2,
+        "train_num": 5,
+        "val_num": 2
+    },
+    {
+        "action": "carry",
+        "id": 3,
+        "object": "baseball bat",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "carry",
+        "id": 4,
+        "object": "bicycle",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 0
+    },
+    {
+        "action": "carry",
+        "id": 5,
+        "object": "book",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "carry",
+        "id": 6,
+        "object": "bottle",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 0,
+        "val_num": 2
+    },
+    {
+        "action": "carry",
+        "id": 7,
+        "object": "car",
+        "rare": true,
+        "test_num": 2,
+        "train_num": 0,
+        "val_num": 0
+    },
+    {
+        "action": "carry",
+        "id": 8,
+        "object": "cell phone",
+        "rare": false,
+        "test_num": 14,
+        "train_num": 11,
+        "val_num": 6
+    },
+    {
+        "action": "carry",
+        "id": 9,
+        "object": "clock",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "carry",
+        "id": 10,
+        "object": "cup",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "carry",
+        "id": 11,
+        "object": "dog",
+        "rare": true,
+        "test_num": 2,
+        "train_num": 0,
+        "val_num": 0
+    },
+    {
+        "action": "carry",
+        "id": 12,
+        "object": "donut",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 0
+    },
+    {
+        "action": "carry",
+        "id": 13,
+        "object": "frisbee",
+        "rare": true,
+        "test_num": 3,
+        "train_num": 1,
+        "val_num": 2
+    },
+    {
+        "action": "carry",
+        "id": 14,
+        "object": "handbag",
+        "rare": false,
+        "test_num": 82,
+        "train_num": 46,
+        "val_num": 46
+    },
+    {
+        "action": "carry",
+        "id": 15,
+        "object": "kite",
+        "rare": true,
+        "test_num": 4,
+        "train_num": 3,
+        "val_num": 3
+    },
+    {
+        "action": "carry",
+        "id": 16,
+        "object": "laptop",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 0
+    },
+    {
+        "action": "carry",
+        "id": 17,
+        "object": "orange",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 1,
+        "val_num": 0
+    },
+    {
+        "action": "carry",
+        "id": 18,
+        "object": "person",
+        "rare": true,
+        "test_num": 2,
+        "train_num": 1,
+        "val_num": 1
+    },
+    {
+        "action": "carry",
+        "id": 19,
+        "object": "sheep",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 0
+    },
+    {
+        "action": "carry",
+        "id": 20,
+        "object": "skateboard",
+        "rare": true,
+        "test_num": 2,
+        "train_num": 6,
+        "val_num": 5
+    },
+    {
+        "action": "carry",
+        "id": 21,
+        "object": "skis",
+        "rare": true,
+        "test_num": 6,
+        "train_num": 6,
+        "val_num": 1
+    },
+    {
+        "action": "carry",
+        "id": 22,
+        "object": "snowboard",
+        "rare": true,
+        "test_num": 8,
+        "train_num": 9,
+        "val_num": 3
+    },
+    {
+        "action": "carry",
+        "id": 23,
+        "object": "sports ball",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 6,
+        "val_num": 0
+    },
+    {
+        "action": "carry",
+        "id": 24,
+        "object": "suitcase",
+        "rare": false,
+        "test_num": 57,
+        "train_num": 24,
+        "val_num": 47
+    },
+    {
+        "action": "carry",
+        "id": 25,
+        "object": "surfboard",
+        "rare": false,
+        "test_num": 109,
+        "train_num": 45,
+        "val_num": 60
+    },
+    {
+        "action": "carry",
+        "id": 26,
+        "object": "teddy bear",
+        "rare": true,
+        "test_num": 2,
+        "train_num": 0,
+        "val_num": 2
+    },
+    {
+        "action": "carry",
+        "id": 27,
+        "object": "tennis racket",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 3,
+        "val_num": 1
+    },
+    {
+        "action": "carry",
+        "id": 28,
+        "object": "umbrella",
+        "rare": false,
+        "test_num": 53,
+        "train_num": 24,
+        "val_num": 28
+    },
+    {
+        "action": "carry",
+        "id": 29,
+        "object": "wine glass",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 1,
+        "val_num": 0
+    },
+    {
+        "action": "catch",
+        "id": 30,
+        "object": "frisbee",
+        "rare": false,
+        "test_num": 175,
+        "train_num": 107,
+        "val_num": 117
+    },
+    {
+        "action": "catch",
+        "id": 31,
+        "object": "sports ball",
+        "rare": false,
+        "test_num": 26,
+        "train_num": 18,
+        "val_num": 14
+    },
+    {
+        "action": "cut",
+        "id": 32,
+        "object": "apple",
+        "rare": true,
+        "test_num": 2,
+        "train_num": 2,
+        "val_num": 2
+    },
+    {
+        "action": "cut",
+        "id": 33,
+        "object": "banana",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 1,
+        "val_num": 2
+    },
+    {
+        "action": "cut",
+        "id": 34,
+        "object": "book",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 0
+    },
+    {
+        "action": "cut",
+        "id": 35,
+        "object": "bowl",
+        "rare": true,
+        "test_num": 2,
+        "train_num": 1,
+        "val_num": 0
+    },
+    {
+        "action": "cut",
+        "id": 36,
+        "object": "broccoli",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "cut",
+        "id": 37,
+        "object": "cake",
+        "rare": false,
+        "test_num": 155,
+        "train_num": 58,
+        "val_num": 102
+    },
+    {
+        "action": "cut",
+        "id": 38,
+        "object": "carrot",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 3,
+        "val_num": 4
+    },
+    {
+        "action": "cut",
+        "id": 39,
+        "object": "donut",
+        "rare": true,
+        "test_num": 2,
+        "train_num": 0,
+        "val_num": 2
+    },
+    {
+        "action": "cut",
+        "id": 40,
+        "object": "fork",
+        "rare": true,
+        "test_num": 3,
+        "train_num": 0,
+        "val_num": 3
+    },
+    {
+        "action": "cut",
+        "id": 41,
+        "object": "hot dog",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 0
+    },
+    {
+        "action": "cut",
+        "id": 42,
+        "object": "knife",
+        "rare": false,
+        "test_num": 179,
+        "train_num": 90,
+        "val_num": 117
+    },
+    {
+        "action": "cut",
+        "id": 43,
+        "object": "laptop",
+        "rare": true,
+        "test_num": 2,
+        "train_num": 0,
+        "val_num": 0
+    },
+    {
+        "action": "cut",
+        "id": 44,
+        "object": "orange",
+        "rare": true,
+        "test_num": 2,
+        "train_num": 0,
+        "val_num": 0
+    },
+    {
+        "action": "cut",
+        "id": 45,
+        "object": "person",
+        "rare": true,
+        "test_num": 5,
+        "train_num": 5,
+        "val_num": 1
+    },
+    {
+        "action": "cut",
+        "id": 46,
+        "object": "pizza",
+        "rare": false,
+        "test_num": 24,
+        "train_num": 16,
+        "val_num": 16
+    },
+    {
+        "action": "cut",
+        "id": 47,
+        "object": "sandwich",
+        "rare": true,
+        "test_num": 4,
+        "train_num": 4,
+        "val_num": 3
+    },
+    {
+        "action": "cut",
+        "id": 48,
+        "object": "scissors",
+        "rare": false,
+        "test_num": 48,
+        "train_num": 17,
+        "val_num": 20
+    },
+    {
+        "action": "cut",
+        "id": 49,
+        "object": "sheep",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 2,
+        "val_num": 4
+    },
+    {
+        "action": "cut",
+        "id": 50,
+        "object": "skateboard",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 0
+    },
+    {
+        "action": "cut",
+        "id": 51,
+        "object": "tie",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 0,
+        "val_num": 3
+    },
+    {
+        "action": "drink",
+        "id": 52,
+        "object": "bottle",
+        "rare": true,
+        "test_num": 7,
+        "train_num": 7,
+        "val_num": 8
+    },
+    {
+        "action": "drink",
+        "id": 53,
+        "object": "bowl",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 1,
+        "val_num": 0
+    },
+    {
+        "action": "drink",
+        "id": 54,
+        "object": "cup",
+        "rare": false,
+        "test_num": 40,
+        "train_num": 27,
+        "val_num": 26
+    },
+    {
+        "action": "drink",
+        "id": 55,
+        "object": "wine glass",
+        "rare": false,
+        "test_num": 30,
+        "train_num": 23,
+        "val_num": 33
+    },
+    {
+        "action": "eat",
+        "id": 56,
+        "object": "apple",
+        "rare": true,
+        "test_num": 7,
+        "train_num": 1,
+        "val_num": 2
+    },
+    {
+        "action": "eat",
+        "id": 57,
+        "object": "banana",
+        "rare": true,
+        "test_num": 15,
+        "train_num": 3,
+        "val_num": 18
+    },
+    {
+        "action": "eat",
+        "id": 58,
+        "object": "broccoli",
+        "rare": true,
+        "test_num": 3,
+        "train_num": 4,
+        "val_num": 3
+    },
+    {
+        "action": "eat",
+        "id": 59,
+        "object": "cake",
+        "rare": false,
+        "test_num": 40,
+        "train_num": 25,
+        "val_num": 33
+    },
+    {
+        "action": "eat",
+        "id": 60,
+        "object": "carrot",
+        "rare": true,
+        "test_num": 9,
+        "train_num": 1,
+        "val_num": 0
+    },
+    {
+        "action": "eat",
+        "id": 61,
+        "object": "donut",
+        "rare": false,
+        "test_num": 59,
+        "train_num": 31,
+        "val_num": 48
+    },
+    {
+        "action": "eat",
+        "id": 62,
+        "object": "fork",
+        "rare": false,
+        "test_num": 55,
+        "train_num": 46,
+        "val_num": 41
+    },
+    {
+        "action": "eat",
+        "id": 63,
+        "object": "hot dog",
+        "rare": false,
+        "test_num": 63,
+        "train_num": 24,
+        "val_num": 37
+    },
+    {
+        "action": "eat",
+        "id": 64,
+        "object": "knife",
+        "rare": false,
+        "test_num": 13,
+        "train_num": 14,
+        "val_num": 14
+    },
+    {
+        "action": "eat",
+        "id": 65,
+        "object": "orange",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 4
+    },
+    {
+        "action": "eat",
+        "id": 66,
+        "object": "pizza",
+        "rare": false,
+        "test_num": 96,
+        "train_num": 54,
+        "val_num": 56
+    },
+    {
+        "action": "eat",
+        "id": 67,
+        "object": "sandwich",
+        "rare": false,
+        "test_num": 41,
+        "train_num": 28,
+        "val_num": 31
+    },
+    {
+        "action": "eat",
+        "id": 68,
+        "object": "spoon",
+        "rare": false,
+        "test_num": 32,
+        "train_num": 13,
+        "val_num": 25
+    },
+    {
+        "action": "hit",
+        "id": 69,
+        "object": "baseball bat",
+        "rare": false,
+        "test_num": 85,
+        "train_num": 51,
+        "val_num": 58
+    },
+    {
+        "action": "hit",
+        "id": 70,
+        "object": "sports ball",
+        "rare": false,
+        "test_num": 226,
+        "train_num": 106,
+        "val_num": 122
+    },
+    {
+        "action": "hit",
+        "id": 71,
+        "object": "tennis racket",
+        "rare": false,
+        "test_num": 230,
+        "train_num": 106,
+        "val_num": 127
+    },
+    {
+        "action": "hold",
+        "id": 72,
+        "object": "apple",
+        "rare": true,
+        "test_num": 5,
+        "train_num": 2,
+        "val_num": 3
+    },
+    {
+        "action": "hold",
+        "id": 73,
+        "object": "backpack",
+        "rare": false,
+        "test_num": 44,
+        "train_num": 25,
+        "val_num": 21
+    },
+    {
+        "action": "hold",
+        "id": 74,
+        "object": "banana",
+        "rare": true,
+        "test_num": 21,
+        "train_num": 6,
+        "val_num": 20
+    },
+    {
+        "action": "hold",
+        "id": 75,
+        "object": "baseball bat",
+        "rare": false,
+        "test_num": 102,
+        "train_num": 59,
+        "val_num": 61
+    },
+    {
+        "action": "hold",
+        "id": 76,
+        "object": "baseball glove",
+        "rare": false,
+        "test_num": 38,
+        "train_num": 33,
+        "val_num": 33
+    },
+    {
+        "action": "hold",
+        "id": 77,
+        "object": "bed",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 0
+    },
+    {
+        "action": "hold",
+        "id": 78,
+        "object": "bench",
+        "rare": true,
+        "test_num": 2,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "hold",
+        "id": 79,
+        "object": "bicycle",
+        "rare": false,
+        "test_num": 36,
+        "train_num": 25,
+        "val_num": 21
+    },
+    {
+        "action": "hold",
+        "id": 80,
+        "object": "bird",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "hold",
+        "id": 81,
+        "object": "boat",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 1,
+        "val_num": 0
+    },
+    {
+        "action": "hold",
+        "id": 82,
+        "object": "book",
+        "rare": false,
+        "test_num": 95,
+        "train_num": 30,
+        "val_num": 53
+    },
+    {
+        "action": "hold",
+        "id": 83,
+        "object": "bottle",
+        "rare": false,
+        "test_num": 17,
+        "train_num": 16,
+        "val_num": 16
+    },
+    {
+        "action": "hold",
+        "id": 84,
+        "object": "bowl",
+        "rare": true,
+        "test_num": 7,
+        "train_num": 4,
+        "val_num": 9
+    },
+    {
+        "action": "hold",
+        "id": 85,
+        "object": "broccoli",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 5,
+        "val_num": 1
+    },
+    {
+        "action": "hold",
+        "id": 86,
+        "object": "cake",
+        "rare": false,
+        "test_num": 13,
+        "train_num": 11,
+        "val_num": 11
+    },
+    {
+        "action": "hold",
+        "id": 87,
+        "object": "carrot",
+        "rare": true,
+        "test_num": 9,
+        "train_num": 1,
+        "val_num": 0
+    },
+    {
+        "action": "hold",
+        "id": 88,
+        "object": "cat",
+        "rare": true,
+        "test_num": 3,
+        "train_num": 4,
+        "val_num": 4
+    },
+    {
+        "action": "hold",
+        "id": 89,
+        "object": "cell phone",
+        "rare": false,
+        "test_num": 310,
+        "train_num": 173,
+        "val_num": 177
+    },
+    {
+        "action": "hold",
+        "id": 90,
+        "object": "chair",
+        "rare": true,
+        "test_num": 4,
+        "train_num": 1,
+        "val_num": 1
+    },
+    {
+        "action": "hold",
+        "id": 91,
+        "object": "cow",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 0
+    },
+    {
+        "action": "hold",
+        "id": 92,
+        "object": "cup",
+        "rare": false,
+        "test_num": 64,
+        "train_num": 43,
+        "val_num": 39
+    },
+    {
+        "action": "hold",
+        "id": 93,
+        "object": "dining table",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 0
+    },
+    {
+        "action": "hold",
+        "id": 94,
+        "object": "dog",
+        "rare": true,
+        "test_num": 15,
+        "train_num": 6,
+        "val_num": 8
+    },
+    {
+        "action": "hold",
+        "id": 95,
+        "object": "donut",
+        "rare": false,
+        "test_num": 54,
+        "train_num": 23,
+        "val_num": 32
+    },
+    {
+        "action": "hold",
+        "id": 96,
+        "object": "elephant",
+        "rare": true,
+        "test_num": 7,
+        "train_num": 3,
+        "val_num": 2
+    },
+    {
+        "action": "hold",
+        "id": 97,
+        "object": "fork",
+        "rare": false,
+        "test_num": 55,
+        "train_num": 33,
+        "val_num": 35
+    },
+    {
+        "action": "hold",
+        "id": 98,
+        "object": "frisbee",
+        "rare": false,
+        "test_num": 137,
+        "train_num": 101,
+        "val_num": 85
+    },
+    {
+        "action": "hold",
+        "id": 99,
+        "object": "hair drier",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 2,
+        "val_num": 0
+    },
+    {
+        "action": "hold",
+        "id": 100,
+        "object": "handbag",
+        "rare": false,
+        "test_num": 77,
+        "train_num": 39,
+        "val_num": 49
+    },
+    {
+        "action": "hold",
+        "id": 101,
+        "object": "horse",
+        "rare": false,
+        "test_num": 81,
+        "train_num": 28,
+        "val_num": 17
+    },
+    {
+        "action": "hold",
+        "id": 102,
+        "object": "hot dog",
+        "rare": false,
+        "test_num": 53,
+        "train_num": 20,
+        "val_num": 40
+    },
+    {
+        "action": "hold",
+        "id": 103,
+        "object": "keyboard",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "hold",
+        "id": 104,
+        "object": "kite",
+        "rare": true,
+        "test_num": 19,
+        "train_num": 5,
+        "val_num": 4
+    },
+    {
+        "action": "hold",
+        "id": 105,
+        "object": "knife",
+        "rare": false,
+        "test_num": 175,
+        "train_num": 83,
+        "val_num": 114
+    },
+    {
+        "action": "hold",
+        "id": 106,
+        "object": "laptop",
+        "rare": false,
+        "test_num": 58,
+        "train_num": 33,
+        "val_num": 45
+    },
+    {
+        "action": "hold",
+        "id": 107,
+        "object": "motorcycle",
+        "rare": false,
+        "test_num": 84,
+        "train_num": 32,
+        "val_num": 36
+    },
+    {
+        "action": "hold",
+        "id": 108,
+        "object": "mouse",
+        "rare": true,
+        "test_num": 25,
+        "train_num": 3,
+        "val_num": 8
+    },
+    {
+        "action": "hold",
+        "id": 109,
+        "object": "orange",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 0,
+        "val_num": 3
+    },
+    {
+        "action": "hold",
+        "id": 110,
+        "object": "person",
+        "rare": false,
+        "test_num": 42,
+        "train_num": 22,
+        "val_num": 28
+    },
+    {
+        "action": "hold",
+        "id": 111,
+        "object": "pizza",
+        "rare": false,
+        "test_num": 63,
+        "train_num": 30,
+        "val_num": 37
+    },
+    {
+        "action": "hold",
+        "id": 112,
+        "object": "refrigerator",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 1,
+        "val_num": 0
+    },
+    {
+        "action": "hold",
+        "id": 113,
+        "object": "remote",
+        "rare": false,
+        "test_num": 52,
+        "train_num": 28,
+        "val_num": 30
+    },
+    {
+        "action": "hold",
+        "id": 114,
+        "object": "sandwich",
+        "rare": false,
+        "test_num": 30,
+        "train_num": 20,
+        "val_num": 25
+    },
+    {
+        "action": "hold",
+        "id": 115,
+        "object": "scissors",
+        "rare": false,
+        "test_num": 46,
+        "train_num": 18,
+        "val_num": 23
+    },
+    {
+        "action": "hold",
+        "id": 116,
+        "object": "sheep",
+        "rare": true,
+        "test_num": 3,
+        "train_num": 1,
+        "val_num": 1
+    },
+    {
+        "action": "hold",
+        "id": 117,
+        "object": "skateboard",
+        "rare": false,
+        "test_num": 41,
+        "train_num": 26,
+        "val_num": 30
+    },
+    {
+        "action": "hold",
+        "id": 118,
+        "object": "skis",
+        "rare": false,
+        "test_num": 57,
+        "train_num": 26,
+        "val_num": 23
+    },
+    {
+        "action": "hold",
+        "id": 119,
+        "object": "snowboard",
+        "rare": false,
+        "test_num": 57,
+        "train_num": 29,
+        "val_num": 28
+    },
+    {
+        "action": "hold",
+        "id": 120,
+        "object": "spoon",
+        "rare": false,
+        "test_num": 26,
+        "train_num": 16,
+        "val_num": 26
+    },
+    {
+        "action": "hold",
+        "id": 121,
+        "object": "sports ball",
+        "rare": false,
+        "test_num": 44,
+        "train_num": 31,
+        "val_num": 23
+    },
+    {
+        "action": "hold",
+        "id": 122,
+        "object": "suitcase",
+        "rare": false,
+        "test_num": 84,
+        "train_num": 44,
+        "val_num": 55
+    },
+    {
+        "action": "hold",
+        "id": 123,
+        "object": "surfboard",
+        "rare": false,
+        "test_num": 167,
+        "train_num": 74,
+        "val_num": 86
+    },
+    {
+        "action": "hold",
+        "id": 124,
+        "object": "teddy bear",
+        "rare": true,
+        "test_num": 19,
+        "train_num": 3,
+        "val_num": 15
+    },
+    {
+        "action": "hold",
+        "id": 125,
+        "object": "tennis racket",
+        "rare": false,
+        "test_num": 258,
+        "train_num": 128,
+        "val_num": 141
+    },
+    {
+        "action": "hold",
+        "id": 126,
+        "object": "tie",
+        "rare": true,
+        "test_num": 6,
+        "train_num": 2,
+        "val_num": 7
+    },
+    {
+        "action": "hold",
+        "id": 127,
+        "object": "toothbrush",
+        "rare": true,
+        "test_num": 10,
+        "train_num": 6,
+        "val_num": 3
+    },
+    {
+        "action": "hold",
+        "id": 128,
+        "object": "truck",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 1,
+        "val_num": 0
+    },
+    {
+        "action": "hold",
+        "id": 129,
+        "object": "umbrella",
+        "rare": false,
+        "test_num": 64,
+        "train_num": 31,
+        "val_num": 39
+    },
+    {
+        "action": "hold",
+        "id": 130,
+        "object": "wine glass",
+        "rare": false,
+        "test_num": 46,
+        "train_num": 29,
+        "val_num": 37
+    },
+    {
+        "action": "jump",
+        "id": 131,
+        "object": "skateboard",
+        "rare": false,
+        "test_num": 235,
+        "train_num": 125,
+        "val_num": 153
+    },
+    {
+        "action": "jump",
+        "id": 132,
+        "object": "skis",
+        "rare": true,
+        "test_num": 39,
+        "train_num": 7,
+        "val_num": 13
+    },
+    {
+        "action": "jump",
+        "id": 133,
+        "object": "snowboard",
+        "rare": false,
+        "test_num": 97,
+        "train_num": 76,
+        "val_num": 89
+    },
+    {
+        "action": "jump",
+        "id": 134,
+        "object": "surfboard",
+        "rare": false,
+        "test_num": 31,
+        "train_num": 16,
+        "val_num": 10
+    },
+    {
+        "action": "kick",
+        "id": 135,
+        "object": "sports ball",
+        "rare": false,
+        "test_num": 163,
+        "train_num": 62,
+        "val_num": 72
+    },
+    {
+        "action": "lay",
+        "id": 136,
+        "object": "bed",
+        "rare": false,
+        "test_num": 175,
+        "train_num": 127,
+        "val_num": 101
+    },
+    {
+        "action": "lay",
+        "id": 137,
+        "object": "bench",
+        "rare": false,
+        "test_num": 16,
+        "train_num": 11,
+        "val_num": 13
+    },
+    {
+        "action": "lay",
+        "id": 138,
+        "object": "chair",
+        "rare": true,
+        "test_num": 4,
+        "train_num": 1,
+        "val_num": 0
+    },
+    {
+        "action": "lay",
+        "id": 139,
+        "object": "couch",
+        "rare": false,
+        "test_num": 34,
+        "train_num": 14,
+        "val_num": 15
+    },
+    {
+        "action": "lay",
+        "id": 140,
+        "object": "dining table",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "lay",
+        "id": 141,
+        "object": "toilet",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 0
+    },
+    {
+        "action": "look",
+        "id": 142,
+        "object": "airplane",
+        "rare": true,
+        "test_num": 6,
+        "train_num": 2,
+        "val_num": 3
+    },
+    {
+        "action": "look",
+        "id": 143,
+        "object": "apple",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 1,
+        "val_num": 1
+    },
+    {
+        "action": "look",
+        "id": 144,
+        "object": "backpack",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 4,
+        "val_num": 3
+    },
+    {
+        "action": "look",
+        "id": 145,
+        "object": "banana",
+        "rare": true,
+        "test_num": 3,
+        "train_num": 0,
+        "val_num": 2
+    },
+    {
+        "action": "look",
+        "id": 146,
+        "object": "baseball bat",
+        "rare": true,
+        "test_num": 9,
+        "train_num": 2,
+        "val_num": 2
+    },
+    {
+        "action": "look",
+        "id": 147,
+        "object": "baseball glove",
+        "rare": true,
+        "test_num": 2,
+        "train_num": 4,
+        "val_num": 1
+    },
+    {
+        "action": "look",
+        "id": 148,
+        "object": "bench",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "look",
+        "id": 149,
+        "object": "bicycle",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 3,
+        "val_num": 3
+    },
+    {
+        "action": "look",
+        "id": 150,
+        "object": "bird",
+        "rare": true,
+        "test_num": 2,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "look",
+        "id": 151,
+        "object": "boat",
+        "rare": true,
+        "test_num": 2,
+        "train_num": 0,
+        "val_num": 0
+    },
+    {
+        "action": "look",
+        "id": 152,
+        "object": "book",
+        "rare": false,
+        "test_num": 75,
+        "train_num": 28,
+        "val_num": 47
+    },
+    {
+        "action": "look",
+        "id": 153,
+        "object": "bottle",
+        "rare": true,
+        "test_num": 2,
+        "train_num": 2,
+        "val_num": 3
+    },
+    {
+        "action": "look",
+        "id": 154,
+        "object": "bowl",
+        "rare": true,
+        "test_num": 13,
+        "train_num": 7,
+        "val_num": 5
+    },
+    {
+        "action": "look",
+        "id": 155,
+        "object": "broccoli",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "look",
+        "id": 156,
+        "object": "bus",
+        "rare": true,
+        "test_num": 8,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "look",
+        "id": 157,
+        "object": "cake",
+        "rare": false,
+        "test_num": 127,
+        "train_num": 42,
+        "val_num": 92
+    },
+    {
+        "action": "look",
+        "id": 158,
+        "object": "car",
+        "rare": true,
+        "test_num": 3,
+        "train_num": 1,
+        "val_num": 0
+    },
+    {
+        "action": "look",
+        "id": 159,
+        "object": "cat",
+        "rare": true,
+        "test_num": 4,
+        "train_num": 8,
+        "val_num": 6
+    },
+    {
+        "action": "look",
+        "id": 160,
+        "object": "cell phone",
+        "rare": false,
+        "test_num": 44,
+        "train_num": 36,
+        "val_num": 26
+    },
+    {
+        "action": "look",
+        "id": 161,
+        "object": "chair",
+        "rare": true,
+        "test_num": 2,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "look",
+        "id": 162,
+        "object": "clock",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 1,
+        "val_num": 0
+    },
+    {
+        "action": "look",
+        "id": 163,
+        "object": "cow",
+        "rare": true,
+        "test_num": 3,
+        "train_num": 2,
+        "val_num": 3
+    },
+    {
+        "action": "look",
+        "id": 164,
+        "object": "cup",
+        "rare": true,
+        "test_num": 12,
+        "train_num": 5,
+        "val_num": 10
+    },
+    {
+        "action": "look",
+        "id": 165,
+        "object": "dining table",
+        "rare": true,
+        "test_num": 9,
+        "train_num": 1,
+        "val_num": 6
+    },
+    {
+        "action": "look",
+        "id": 166,
+        "object": "dog",
+        "rare": false,
+        "test_num": 20,
+        "train_num": 11,
+        "val_num": 7
+    },
+    {
+        "action": "look",
+        "id": 167,
+        "object": "donut",
+        "rare": true,
+        "test_num": 10,
+        "train_num": 4,
+        "val_num": 14
+    },
+    {
+        "action": "look",
+        "id": 168,
+        "object": "elephant",
+        "rare": true,
+        "test_num": 3,
+        "train_num": 3,
+        "val_num": 5
+    },
+    {
+        "action": "look",
+        "id": 169,
+        "object": "fire hydrant",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "look",
+        "id": 170,
+        "object": "fork",
+        "rare": true,
+        "test_num": 7,
+        "train_num": 9,
+        "val_num": 3
+    },
+    {
+        "action": "look",
+        "id": 171,
+        "object": "frisbee",
+        "rare": false,
+        "test_num": 307,
+        "train_num": 188,
+        "val_num": 202
+    },
+    {
+        "action": "look",
+        "id": 172,
+        "object": "giraffe",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 2,
+        "val_num": 2
+    },
+    {
+        "action": "look",
+        "id": 173,
+        "object": "handbag",
+        "rare": true,
+        "test_num": 2,
+        "train_num": 1,
+        "val_num": 0
+    },
+    {
+        "action": "look",
+        "id": 174,
+        "object": "horse",
+        "rare": true,
+        "test_num": 8,
+        "train_num": 4,
+        "val_num": 3
+    },
+    {
+        "action": "look",
+        "id": 175,
+        "object": "hot dog",
+        "rare": true,
+        "test_num": 11,
+        "train_num": 7,
+        "val_num": 4
+    },
+    {
+        "action": "look",
+        "id": 176,
+        "object": "keyboard",
+        "rare": true,
+        "test_num": 2,
+        "train_num": 3,
+        "val_num": 1
+    },
+    {
+        "action": "look",
+        "id": 177,
+        "object": "kite",
+        "rare": true,
+        "test_num": 10,
+        "train_num": 7,
+        "val_num": 8
+    },
+    {
+        "action": "look",
+        "id": 178,
+        "object": "knife",
+        "rare": false,
+        "test_num": 31,
+        "train_num": 17,
+        "val_num": 26
+    },
+    {
+        "action": "look",
+        "id": 179,
+        "object": "laptop",
+        "rare": false,
+        "test_num": 277,
+        "train_num": 121,
+        "val_num": 170
+    },
+    {
+        "action": "look",
+        "id": 180,
+        "object": "motorcycle",
+        "rare": true,
+        "test_num": 2,
+        "train_num": 1,
+        "val_num": 1
+    },
+    {
+        "action": "look",
+        "id": 181,
+        "object": "mouse",
+        "rare": true,
+        "test_num": 2,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "look",
+        "id": 182,
+        "object": "person",
+        "rare": false,
+        "test_num": 392,
+        "train_num": 215,
+        "val_num": 230
+    },
+    {
+        "action": "look",
+        "id": 183,
+        "object": "pizza",
+        "rare": false,
+        "test_num": 33,
+        "train_num": 13,
+        "val_num": 24
+    },
+    {
+        "action": "look",
+        "id": 184,
+        "object": "potted plant",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 0
+    },
+    {
+        "action": "look",
+        "id": 185,
+        "object": "refrigerator",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 1,
+        "val_num": 3
+    },
+    {
+        "action": "look",
+        "id": 186,
+        "object": "remote",
+        "rare": true,
+        "test_num": 2,
+        "train_num": 3,
+        "val_num": 0
+    },
+    {
+        "action": "look",
+        "id": 187,
+        "object": "sandwich",
+        "rare": true,
+        "test_num": 10,
+        "train_num": 7,
+        "val_num": 7
+    },
+    {
+        "action": "look",
+        "id": 188,
+        "object": "scissors",
+        "rare": false,
+        "test_num": 23,
+        "train_num": 11,
+        "val_num": 11
+    },
+    {
+        "action": "look",
+        "id": 189,
+        "object": "sheep",
+        "rare": true,
+        "test_num": 2,
+        "train_num": 2,
+        "val_num": 5
+    },
+    {
+        "action": "look",
+        "id": 190,
+        "object": "skateboard",
+        "rare": false,
+        "test_num": 270,
+        "train_num": 143,
+        "val_num": 195
+    },
+    {
+        "action": "look",
+        "id": 191,
+        "object": "skis",
+        "rare": false,
+        "test_num": 49,
+        "train_num": 16,
+        "val_num": 29
+    },
+    {
+        "action": "look",
+        "id": 192,
+        "object": "snowboard",
+        "rare": false,
+        "test_num": 82,
+        "train_num": 74,
+        "val_num": 82
+    },
+    {
+        "action": "look",
+        "id": 193,
+        "object": "spoon",
+        "rare": true,
+        "test_num": 5,
+        "train_num": 4,
+        "val_num": 8
+    },
+    {
+        "action": "look",
+        "id": 194,
+        "object": "sports ball",
+        "rare": false,
+        "test_num": 598,
+        "train_num": 256,
+        "val_num": 265
+    },
+    {
+        "action": "look",
+        "id": 195,
+        "object": "suitcase",
+        "rare": true,
+        "test_num": 9,
+        "train_num": 5,
+        "val_num": 4
+    },
+    {
+        "action": "look",
+        "id": 196,
+        "object": "surfboard",
+        "rare": false,
+        "test_num": 194,
+        "train_num": 114,
+        "val_num": 140
+    },
+    {
+        "action": "look",
+        "id": 197,
+        "object": "tennis racket",
+        "rare": true,
+        "test_num": 9,
+        "train_num": 2,
+        "val_num": 1
+    },
+    {
+        "action": "look",
+        "id": 198,
+        "object": "tie",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 2,
+        "val_num": 1
+    },
+    {
+        "action": "look",
+        "id": 199,
+        "object": "toilet",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 1,
+        "val_num": 0
+    },
+    {
+        "action": "look",
+        "id": 200,
+        "object": "traffic light",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 0
+    },
+    {
+        "action": "look",
+        "id": 201,
+        "object": "train",
+        "rare": true,
+        "test_num": 3,
+        "train_num": 5,
+        "val_num": 7
+    },
+    {
+        "action": "look",
+        "id": 202,
+        "object": "truck",
+        "rare": true,
+        "test_num": 3,
+        "train_num": 3,
+        "val_num": 1
+    },
+    {
+        "action": "look",
+        "id": 203,
+        "object": "tv",
+        "rare": false,
+        "test_num": 34,
+        "train_num": 18,
+        "val_num": 11
+    },
+    {
+        "action": "look",
+        "id": 204,
+        "object": "umbrella",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 2,
+        "val_num": 2
+    },
+    {
+        "action": "look",
+        "id": 205,
+        "object": "wine glass",
+        "rare": true,
+        "test_num": 7,
+        "train_num": 7,
+        "val_num": 4
+    },
+    {
+        "action": "point",
+        "id": 206,
+        "object": "banana",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 0
+    },
+    {
+        "action": "point",
+        "id": 207,
+        "object": "bed",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 0
+    },
+    {
+        "action": "point",
+        "id": 208,
+        "object": "cake",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "point",
+        "id": 209,
+        "object": "cell phone",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 1,
+        "val_num": 0
+    },
+    {
+        "action": "point",
+        "id": 210,
+        "object": "cow",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 2,
+        "val_num": 0
+    },
+    {
+        "action": "point",
+        "id": 211,
+        "object": "dining table",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "point",
+        "id": 212,
+        "object": "fire hydrant",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "point",
+        "id": 213,
+        "object": "giraffe",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "point",
+        "id": 214,
+        "object": "hot dog",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "point",
+        "id": 215,
+        "object": "keyboard",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "point",
+        "id": 216,
+        "object": "kite",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 1,
+        "val_num": 0
+    },
+    {
+        "action": "point",
+        "id": 217,
+        "object": "laptop",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 1,
+        "val_num": 0
+    },
+    {
+        "action": "point",
+        "id": 218,
+        "object": "motorcycle",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 0
+    },
+    {
+        "action": "point",
+        "id": 219,
+        "object": "person",
+        "rare": true,
+        "test_num": 3,
+        "train_num": 2,
+        "val_num": 1
+    },
+    {
+        "action": "point",
+        "id": 220,
+        "object": "pizza",
+        "rare": true,
+        "test_num": 4,
+        "train_num": 0,
+        "val_num": 0
+    },
+    {
+        "action": "point",
+        "id": 221,
+        "object": "refrigerator",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "point",
+        "id": 222,
+        "object": "sandwich",
+        "rare": true,
+        "test_num": 3,
+        "train_num": 1,
+        "val_num": 1
+    },
+    {
+        "action": "point",
+        "id": 223,
+        "object": "sheep",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "point",
+        "id": 224,
+        "object": "skis",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 0
+    },
+    {
+        "action": "point",
+        "id": 225,
+        "object": "sports ball",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 0
+    },
+    {
+        "action": "point",
+        "id": 226,
+        "object": "suitcase",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 0
+    },
+    {
+        "action": "point",
+        "id": 227,
+        "object": "tie",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "point",
+        "id": 228,
+        "object": "tv",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 0,
+        "val_num": 2
+    },
+    {
+        "action": "read",
+        "id": 229,
+        "object": "book",
+        "rare": false,
+        "test_num": 86,
+        "train_num": 34,
+        "val_num": 52
+    },
+    {
+        "action": "ride",
+        "id": 230,
+        "object": "bicycle",
+        "rare": false,
+        "test_num": 54,
+        "train_num": 32,
+        "val_num": 35
+    },
+    {
+        "action": "ride",
+        "id": 231,
+        "object": "boat",
+        "rare": false,
+        "test_num": 33,
+        "train_num": 17,
+        "val_num": 14
+    },
+    {
+        "action": "ride",
+        "id": 232,
+        "object": "bus",
+        "rare": true,
+        "test_num": 1,
+        "train_num": 1,
+        "val_num": 0
+    },
+    {
+        "action": "ride",
+        "id": 233,
+        "object": "car",
+        "rare": true,
+        "test_num": 11,
+        "train_num": 4,
+        "val_num": 5
+    },
+    {
+        "action": "ride",
+        "id": 234,
+        "object": "elephant",
+        "rare": false,
+        "test_num": 61,
+        "train_num": 34,
+        "val_num": 39
+    },
+    {
+        "action": "ride",
+        "id": 235,
+        "object": "horse",
+        "rare": false,
+        "test_num": 152,
+        "train_num": 61,
+        "val_num": 47
+    },
+    {
+        "action": "ride",
+        "id": 236,
+        "object": "motorcycle",
+        "rare": false,
+        "test_num": 162,
+        "train_num": 59,
+        "val_num": 67
+    },
+    {
+        "action": "ride",
+        "id": 237,
+        "object": "train",
+        "rare": false,
+        "test_num": 15,
+        "train_num": 11,
+        "val_num": 13
+    },
+    {
+        "action": "ride",
+        "id": 238,
+        "object": "truck",
+        "rare": true,
+        "test_num": 16,
+        "train_num": 3,
+        "val_num": 3
+    },
+    {
+        "action": "sit",
+        "id": 239,
+        "object": "backpack",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 0,
+        "val_num": 2
+    },
+    {
+        "action": "sit",
+        "id": 240,
+        "object": "bed",
+        "rare": false,
+        "test_num": 60,
+        "train_num": 25,
+        "val_num": 30
+    },
+    {
+        "action": "sit",
+        "id": 241,
+        "object": "bench",
+        "rare": false,
+        "test_num": 111,
+        "train_num": 53,
+        "val_num": 54
+    },
+    {
+        "action": "sit",
+        "id": 242,
+        "object": "bicycle",
+        "rare": false,
+        "test_num": 40,
+        "train_num": 29,
+        "val_num": 27
+    },
+    {
+        "action": "sit",
+        "id": 243,
+        "object": "chair",
+        "rare": false,
+        "test_num": 427,
+        "train_num": 208,
+        "val_num": 223
+    },
+    {
+        "action": "sit",
+        "id": 244,
+        "object": "couch",
+        "rare": false,
+        "test_num": 95,
+        "train_num": 60,
+        "val_num": 76
+    },
+    {
+        "action": "sit",
+        "id": 245,
+        "object": "dining table",
+        "rare": true,
+        "test_num": 2,
+        "train_num": 1,
+        "val_num": 0
+    },
+    {
+        "action": "sit",
+        "id": 246,
+        "object": "elephant",
+        "rare": false,
+        "test_num": 48,
+        "train_num": 29,
+        "val_num": 30
+    },
+    {
+        "action": "sit",
+        "id": 247,
+        "object": "handbag",
+        "rare": true,
+        "test_num": 0,
+        "train_num": 0,
+        "val_num": 1
+    },
+    {
+        "action": "sit",
+        "id": 248,
+        "object": "horse",
+        "rare": false,
+        "test_num": 136,
+        "train_num": 53,
+        "val_num": 43
+    },
+    {
+        "action": "sit",
+        "id": 249,
+        "object": "motorcycle",
+        "rare": false,
+        "test_num": 160,
+        "train_num": 58,
+        "val_num": 61
+    },
+    {
+        "action": "sit",
+        "id": 250,
+        "object": "suitcase",
+        "rare": true,
+        "test_num": 3,
+        "train_num": 3,
+        "val_num": 1
+    },
+    {
+        "action": "sit",
+        "id": 251,
+        "object": "toilet",
+        "rare": true,
+        "test_num": 7,
+        "train_num": 2,
+        "val_num": 3
+    },
+    {
+        "action": "skateboard",
+        "id": 252,
+        "object": "skateboard",
+        "rare": false,
+        "test_num": 402,
+        "train_num": 208,
+        "val_num": 259
+    },
+    {
+        "action": "ski",
+        "id": 253,
+        "object": "skis",
+        "rare": false,
+        "test_num": 360,
+        "train_num": 164,
+        "val_num": 273
+    },
+    {
+        "action": "snowboard",
+        "id": 254,
+        "object": "snowboard",
+        "rare": false,
+        "test_num": 261,
+        "train_num": 166,
+        "val_num": 201
+    },
+    {
+        "action": "surf",
+        "id": 255,
+        "object": "surfboard",
+        "rare": false,
+        "test_num": 464,
+        "train_num": 235,
+        "val_num": 250
+    },
+    {
+        "action": "talk_on_phone",
+        "id": 256,
+        "object": "cell phone",
+        "rare": false,
+        "test_num": 246,
+        "train_num": 139,
+        "val_num": 153
+    },
+    {
+        "action": "throw",
+        "id": 257,
+        "object": "frisbee",
+        "rare": false,
+        "test_num": 134,
+        "train_num": 94,
+        "val_num": 76
+    },
+    {
+        "action": "throw",
+        "id": 258,
+        "object": "sports ball",
+        "rare": false,
+        "test_num": 80,
+        "train_num": 42,
+        "val_num": 49
+    },
+    {
+        "action": "work_on_computer",
+        "id": 259,
+        "object": "laptop",
+        "rare": false,
+        "test_num": 375,
+        "train_num": 180,
+        "val_num": 218
+    }
+]
