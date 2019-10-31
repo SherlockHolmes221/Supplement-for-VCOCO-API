@@ -187,10 +187,11 @@ class VCOCOeval(object):
 
             # the action lable==1 and has the action
             if has_label.size > 0:
-                action_id[i] = 1
+                action_id[i] = 1  # find the class
                 assert has_label.size == 1
                 rids = x['role_object_id'][has_label]  # (1, 2) or (1,3)
                 assert rids[0, 0] == ann_id
+
                 for j in range(1, rids.shape[1]):
                     if rids[0, j] == 0:
                         # no role
@@ -199,6 +200,7 @@ class VCOCOeval(object):
                     aid = np.where(ann_ids == rids[0, j])[0]
                     # print("aid", aid)
                     assert aid.size > 0
+                    # aid: box index
                     role_id[i, j - 1] = aid
         return action_id, role_id
 
@@ -217,7 +219,7 @@ class VCOCOeval(object):
                         else:
                             this_role[0, 5 * aid: 5 * aid + 5, j - 1] = det[self.actions[aid] + '_' + rid]
                 agents = np.concatenate((agents, this_agent), axis=0)  # (1, 4+num_actions)
-                roles = np.concatenate((roles, this_role), axis=0)  # (1, 4+num_actions,2)
+                roles = np.concatenate((roles, this_role), axis=0)  # (1, 5 * num_actions,2)
         # [p_x1,p_y1, p_x2,p_y2, score1, score2...........]
         # [x1,y1,x2,y2,s ....]
         return agents, roles
@@ -246,9 +248,11 @@ class VCOCOeval(object):
             # person boxes
             gt_boxes = vcocodb[i]['boxes'][gt_inds]
             gt_actions = vcocodb[i]['gt_actions'][gt_inds]
+
             # some peorson instances don't have annotated actions
             # we ignore those instances
             ignore = np.any(gt_actions == -1, axis=1)
+
             assert np.all(gt_actions[np.where(ignore == True)[0]] == -1)
 
             for aid in range(self.num_actions):
@@ -261,20 +265,29 @@ class VCOCOeval(object):
                     # if action has no role, then no role AP computed
                     continue
 
+                # self.roles[aid] (1, 2/3)
+                # for each roles(2 or 3) in an action
                 for rid in range(len(self.roles[aid]) - 1):
 
                     # keep track of detected instances for each action for each role
                     covered = np.zeros((gt_boxes.shape[0]), dtype=np.bool)
 
-                    # get gt roles for action and role
-                    gt_role_inds = vcocodb[i]['gt_role_id'][gt_inds, aid, rid]
-                    gt_roles = -np.ones_like(gt_boxes)
+                    # get gt roles label: box index
+                    gt_role_inds = vcocodb[i]['gt_role_id'][gt_inds, aid, rid]  # (gt_inds,1)
+
+                    gt_roles = -np.ones_like(gt_boxes)  # (gt_inds,4)
+
                     for j in range(gt_boxes.shape[0]):
                         if gt_role_inds[j] > -1:
+                            # get the related box with the person gt
                             gt_roles[j] = vcocodb[i]['boxes'][gt_role_inds[j]]
 
+                    # get the prediction:
+                    # person bbox
                     agent_boxes = pred_agents[:, :4]
+                    # role bbox
                     role_boxes = pred_roles[:, 5 * aid: 5 * aid + 4, rid]
+                    # role score
                     agent_scores = pred_roles[:, 5 * aid + 4, rid]
 
                     valid = np.where(np.isnan(agent_scores) == False)[0]
@@ -286,6 +299,7 @@ class VCOCOeval(object):
 
                     for j in idx:
                         pred_box = agent_boxes[j, :]
+                        # person overlap
                         overlaps = get_overlap(gt_boxes, pred_box)
 
                         # matching happens based on the person
@@ -312,6 +326,7 @@ class VCOCOeval(object):
                             else:
                                 raise ValueError('Unknown eval type')
                         else:
+                            # role overlap
                             ov_role = get_overlap(gt_roles[jmax, :].reshape((1, 4)), role_boxes[j, :])
 
                         is_true_action = (gt_actions[jmax, aid] == 1)
@@ -450,6 +465,7 @@ class VCOCOeval(object):
             a_sc = np.array(sc[aid], dtype=np.float32)
 
             # sort in descending score order
+            # todo
             idx = a_sc.argsort()[::-1]
             a_fp = a_fp[idx]
             a_tp = a_tp[idx]

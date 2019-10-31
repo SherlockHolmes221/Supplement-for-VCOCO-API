@@ -150,8 +150,48 @@ for each test_gt_image:
 for each actions:
     get sc[i] fp[i] tp[i] sort descending
     compute recall and prec 
+    compute AP
+compute mAP
 ```
 ### Details of role AP 
 ```
-
+# Pseudo code
+# input: test_gt_image and prediction
+for each test_gt_image:
+    get the box in boxes which gt_class==1(person) and gt_inds
+    using gt_inds select the person gt_boxes and gt_actions
+    
+    for each actions:
+        compute nums of the i_th action (in all test_gt_images after all cycle) as npos[i]
+        
+    select the predicted data by image_id as pred_agents and pred_roles
+    
+    for each actions:
+        for each roles:
+            get gt_roles_boxes for each valid gt_box as gt_roles
+            get predicted agent_boxes,role_boxes and agent_scores
+            
+                for each box in all valid predicted boxes from score high to low:
+                    compute person_overlaps using each box and all gt_boxes and get ovmax
+                    
+                    if gt_box with max overlap has no role:
+                        if eval_type == 'scenario_1':
+                            if : predicted box also has no role
+                                role_overlap = 1
+                            else:
+                                role_overlap = 0
+                        else eval_type == 'scenario_2':
+                            role_overlap = 1
+                    
+                    sc[i][j] : action scores for each role in each valid box (in all test_gt_images)
+                    fp[i][j] : fp[i] == 0 when tp[i] == 1 else 1
+                    tp[i][j] : tp[i] == 1 if is_true_action and preson_overlap>ovr_thresh and roles_overlap>ovr_thresh and 
+                               for each role in each action in each test_gt_image
+# compute ap for each role in each action
+for each actions:
+    for each roles:
+        get sc[i][j] fp[i][j] tp[i][j] sort descending
+        compute recall and prec 
+        compute AP
+compute mAP
 ```
