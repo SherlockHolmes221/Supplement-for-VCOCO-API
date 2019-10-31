@@ -13,6 +13,8 @@ the origin v-coco api please click [here](https://github.com/s-gupta/v-coco.git)
   
   More concise to visualization without download from Internet
 
+- add eval_example.py for Evaluation and and some explanations of APs in README.md  
+
 ## Experiments and Results
 - Visualization
 ```
@@ -40,7 +42,7 @@ python get_hois.py
 ### build the project 
 ```
 # todo
-git clone --recursive https://github.com/s-gupta/v-coco.git
+git clone --recursive https://github.com/SherlockHolmes221/Supplement-for-VCOCO-API.git
 
 # setup the environment
 conda create -n vcocoapi python=3.6.9 
@@ -105,7 +107,51 @@ python script_pick_annotations.py coco/annotations
 # action_name    - string
 # role_name      - ['agent', 'obj', 'instr']
 # role_object_id - N x K matrix, obviously [:,0] is same as ann_id
+
+# format about ground-truth per test image when evaluating
+                     shape 
+# id                                      image_id
+# boxes          len(vaild_box), 4        x1,y1,x2,y2
+# is_crowd       len(vaild_box), 1
+# gt_classes     len(vaild_box), 4        class id 
+# gt_actions     len(vaild_box), 26       mark as 1 if involve the action
+# gt_role_id     len(vaild_box), 26 ,2    
 ```
 
+## Evaluation
+```
+python eval_example.py 
+```
+### Details of agent AP (person with action only)
+```
+# Pseudo code
+# input: test_gt_image and prediction
 
+for each test_gt_image:
+    get the box in boxes which gt_class==1(person) and gt_inds
+    using gt_inds select the person gt_boxes and gt_actions
+    
+    for each actions:
+        compute nums of the i_th action (in all test_gt_images after all cycle) as npos[i]
+    
+    select the predicted data by image_id as pred_agents
+    
+    for each actions:
+        get valid predicted boxes by scores in pred_agents
+        
+        for each box in all valid predicted boxes from score high to low:
+            compute overlaps with all gt_boxes and get ovmax
+            sc[i] : i_th action scores for each valid box (in all test_gt_images)
+            fp[i] : fp[i] == 0 when tp[i] == 1 else 1
+            tp[i] : tp[i] == 1 if is_true_action and ovmax>ovr_thresh 
+                    for each action in each test_gt_image
 
+# compute ap for each action
+for each actions:
+    get sc[i] fp[i] tp[i] sort descending
+    compute recall and prec 
+```
+### Details of role AP 
+```
+
+```
