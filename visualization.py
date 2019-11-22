@@ -20,7 +20,7 @@ def subplot(plt, Y_X, sz_x_y=(10, 10)):
     return fig, axes
 
 
-def visualization(name="train", action='hit', show_num=5):
+def visualization(name="train", action='hit', show_num=1, index=-1):
     assert name == 'train' or name == 'trainval' or name == 'val' or name == 'test', \
         "illegal name "
 
@@ -39,15 +39,18 @@ def visualization(name="train", action='hit', show_num=5):
     cls_id = classes.index(action)
     vcoco = vcoco_data[cls_id]
 
-    np.random.seed(1)
-    positive_index = np.where(vcoco['label'] == 1)[0]
-    positive_index = np.random.permutation(positive_index)
+    # np.random.seed(1)
+    # positive_index = np.where(vcoco['label'] == 1)[0]
+    # positive_index = np.random.permutation(positive_index)
+    positive_index = [index]
+
     cc = plt.get_cmap('hsv', lut=4)
 
     for i in range(show_num):
         id = positive_index[i]
         # get image
-        file_name = 'coco/images/' + name + '2014/' + str(vcoco['file_name'][id])
+        path = 'train' if "train" in vcoco['file_name'][id] else "val"
+        file_name = 'coco/images/' + path + '2014/' + str(vcoco['file_name'][id])
         print(file_name)
         im = np.asarray(Image.open(file_name))
 
@@ -59,6 +62,8 @@ def visualization(name="train", action='hit', show_num=5):
         fig, ax = subplot(plt, (1, 1), (sy, sx))
         ax.set_axis_off()
         ax.imshow(im)
+
+        print("label:", vcoco['label'][id], vcoco['role_object_id'][id])
 
         # draw bounding box for agent
         draw_bbox(plt, ax, vcoco['bbox'][[id], :], edgecolor=cc(0)[:3])
@@ -73,5 +78,44 @@ def visualization(name="train", action='hit', show_num=5):
         plt.show()
 
 
+def visualization_list():
+    import json
+    anno_file = json.load(open('for_no_frills/data_process/anno_list_gt.json', 'r'))
+
+    for anno in anno_file:
+        # if anno['global_id'] != '379666':
+        #     continue
+
+        file_name = 'coco/images/train2014/COCO_train2014_' + anno['global_id'].zfill(12) + '.jpg'
+        print(file_name)
+
+        cc = plt.get_cmap('hsv', lut=4)
+        im = np.asarray(Image.open(file_name))
+
+        # scale
+        sy = 4.
+        sx = float(im.shape[1]) / float(im.shape[0]) * sy
+
+        # draw image
+        fig, ax = subplot(plt, (1, 1), (sy, sx))
+        ax.set_axis_off()
+        ax.imshow(im)
+
+        for hoi in anno['hois']:
+            # draw bounding box for agent
+            draw_bbox1(plt, ax, np.array(hoi['human_bboxes']), edgecolor=cc(0)[:3], cat="person")
+            draw_bbox1(plt, ax, np.array(hoi['object_bboxes']), edgecolor=cc(1)[:3], cat=hoi['object'])
+        plt.show()
+
+
+def draw_bbox1(plt, ax, box, fill=False, linewidth=2, edgecolor=[1.0, 0.0, 0.0], cat=None, **kwargs):
+    print(box)
+    ax.add_patch(plt.Rectangle((box[0], box[1]),
+                               box[2] - box[0], box[3] - box[1],
+                               fill=fill, linewidth=linewidth, edgecolor=edgecolor, **kwargs))
+    plt.text(box[0], box[1], cat)
+
+
 if __name__ == '__main__':
-    visualization(name='train', action='carry', show_num=5)
+    # visualization_list()
+    visualization(name='test', action='run', show_num=1, index=7358)
