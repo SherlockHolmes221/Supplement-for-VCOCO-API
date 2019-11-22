@@ -1,0 +1,6 @@
+{
+    "test": 4539,
+    "train": 2336,
+    "trainval_list": 4971,
+    "val": 2635
+}
