@@ -85,7 +85,7 @@ def get_table1_one_row(v_coco, coco, action_index=0, dict={}):
         print("4.", trainval_list[5][i])
         print("5.", trainval_list[1] + test_list[1] if i == 1 else trainval_list[2] + test_list[2])
         print("6.Objects in role:", trainval_list[5][i], name_list1 if i == 1 else name_list2)
-        result[trainval_list[5][i]] = name_list1 if i == 1 else i == 2
+        result[trainval_list[5][i]] = name_list1 if i == 1 else name_list2
     dict[trainval_list[6]] = result
     return dict
 
